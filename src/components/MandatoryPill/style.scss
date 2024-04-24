@@ -1,0 +1,12 @@
+.mandatory-disabled-remove-btn {
+    opacity: 70%;
+    cursor: not-allowed !important;
+
+    &:hover {
+        background: initial;
+    }
+
+    & > * {
+        pointer-events: none;
+    }
+}

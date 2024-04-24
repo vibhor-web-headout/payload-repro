@@ -1,0 +1,21 @@
+.copy-to-clipboard-section {
+  display: flex;
+
+  .field-label {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+
+  .value {
+    font-family: var(--font-serif);
+    max-width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .copy-to-clipboard {
+    margin-left: auto;
+  }
+}

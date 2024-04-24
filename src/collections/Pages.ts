@@ -1,4 +1,12 @@
-import { CollectionConfig } from "payload/types";
+import {CollectionConfig, Tab} from 'payload/types';
+import DocumentBlock from '../blocks';
+
+const PageContent: Tab = {
+  name: 'content',
+  label: 'Content',
+  fields: [DocumentBlock],
+  interfaceName: 'IPageContent'
+};
 
 const Pages: CollectionConfig = {
   slug: "pages",
@@ -20,9 +28,8 @@ const Pages: CollectionConfig = {
       required: true,
     },
     {
-      name: "excerpt",
-      label: "Excerpt",
-      type: "text",
+      type: 'tabs',
+      tabs: [ PageContent]
     },
   ],
 };

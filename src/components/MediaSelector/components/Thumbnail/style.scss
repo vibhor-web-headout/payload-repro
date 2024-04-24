@@ -1,0 +1,30 @@
+.media-selector-thumbnail {
+  transition: all 150ms ease;
+  display: flex;
+  position: relative;
+
+  video {
+    max-width: 100%;
+  }
+
+  .thumbnail-description {
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0 0 0 / 75%);
+    color: white;
+    justify-content: center;
+  }
+
+  &:hover {
+    opacity: 80%;
+    transform: scale(1.02);
+    cursor: pointer;
+
+    .thumbnail-description {
+      visibility: visible;
+    }
+  }
+}
